@@ -1,0 +1,69 @@
+/* TakeAttendance.css */
+
+.attendance-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .attendance-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .attendance-container label {
+    font-weight: bold;
+    display: block;
+    margin: 15px 0 5px;
+  }
+  
+  .attendance-container select,
+  .attendance-container input[type="date"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .attendance-table th,
+  .attendance-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  .attendance-table th {
+    background-color: #f0f0f0;
+  }
+  
+  .attendance-table select {
+    width: 100%;
+    padding: 6px;
+  }
+  
+  .attendance-container button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .attendance-container button:hover {
+    background-color: #0056b3;
+  }
+  

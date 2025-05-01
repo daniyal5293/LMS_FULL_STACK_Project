@@ -1,0 +1,59 @@
+.attendance-container {
+  padding: 2rem;
+  margin-left: 250px;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+.attendance-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.attendance-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.attendance-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.attendance-card:hover {
+  transform: translateY(-5px);
+}
+
+.attendance-course-name {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.attendance-percent {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.attendance-details {
+  text-align: left;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.attendance-details p {
+  margin: 0.2rem 0;
+}

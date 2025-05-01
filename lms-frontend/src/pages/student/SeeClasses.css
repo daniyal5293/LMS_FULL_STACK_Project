@@ -1,0 +1,62 @@
+.see-classes-container {
+  padding: 20px;
+  margin-left: 250px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.classes-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.classes-table th, .classes-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.classes-table th {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+}
+
+.classes-table td {
+  font-size: 16px;
+  color: #555;
+}
+
+.classes-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.classes-table tr:hover {
+  background-color: #ddd;
+}
+
+.classes-table td, .classes-table th {
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .see-classes-container {
+    padding: 15px;
+    margin-left: 0; /* Don't push content if on small screens */
+  }
+
+  .classes-table th, .classes-table td {
+    font-size: 14px;
+  }
+}

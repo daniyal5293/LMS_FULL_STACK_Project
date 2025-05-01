@@ -1,0 +1,96 @@
+/* TeacherHome.css */
+.teacher-home {
+  font-family: 'Roboto', sans-serif;
+  padding: 30px;
+  background-color: #f1f5f9;
+  min-height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #2d3e50;
+  font-weight: 700;
+}
+
+.announcement-cards, .assignment-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.announcement-card, .assignment-card {
+  background: linear-gradient(145deg, #ff6f61, #ff8c6f);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.announcement-card:hover, .assignment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.announcement-card h3, .assignment-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.announcement-card p, .assignment-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #f4f4f4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Limit to 4 lines */
+  -webkit-box-orient: vertical;
+}
+
+.announcement-card small, .assignment-card small {
+  font-size: 0.9rem;
+  color: #f0f0f0;
+  text-align: right;
+  font-style: italic;
+}
+
+.announcement-card:before, .assignment-card:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0.8);
+}
+
+.announcement-card:last-child, .assignment-card:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .announcement-cards, .assignment-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement-cards, .assignment-cards {
+    grid-template-columns: 1fr;
+  }
+}

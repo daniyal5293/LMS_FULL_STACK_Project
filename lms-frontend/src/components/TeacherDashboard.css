@@ -1,0 +1,8 @@
+.teacher-dashboard {
+  display: flex;
+}
+
+.teacher-content {
+  margin-left: 260px; /* Sidebar width */
+  padding: 30px;
+}

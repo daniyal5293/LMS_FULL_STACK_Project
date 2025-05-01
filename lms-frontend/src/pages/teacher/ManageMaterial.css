@@ -1,0 +1,119 @@
+.manage-material {
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+    background-color: #f1f5f9;
+    min-height: 100vh;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #2d3e50;
+    font-weight: 700;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input[type="text"],
+  form input[type="file"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #2d3e50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #4a5a6a;
+  }
+  
+  .material-list {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .material-list h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2d3e50;
+  }
+  
+  .material-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .material-list li {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .material-list li p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .material-list li a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .material-list li a:hover {
+    color: #d94f3b;
+  }
+  
+  .material-list li p,
+  .material-list li a {
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .manage-material form {
+      width: 80%;
+    }
+  
+    .material-list ul {
+      padding-left: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .manage-material form {
+      width: 90%;
+    }
+  
+    .material-list ul {
+      padding-left: 10px;
+    }
+  }
+  

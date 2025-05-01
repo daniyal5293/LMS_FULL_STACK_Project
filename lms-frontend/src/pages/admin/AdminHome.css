@@ -1,0 +1,22 @@
+.admin-home {
+    padding: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stats div {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+}
+
+.chart-container {
+    width: 80%;
+    margin: 0 auto;
+}

@@ -1,0 +1,23 @@
+.upload-assignment {
+  padding: 20px;
+  margin-left: 250px;
+  box-sizing: border-box;
+}
+
+.assignment-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.assignment-card textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+}
+
+.assignment-card button {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
